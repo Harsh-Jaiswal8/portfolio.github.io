@@ -88,7 +88,7 @@
             width: 400px;
             background-color: rgb(106, 106, 106);
             border-radius: 10%;
-            z-index: 1;
+            z-index: 2;
             position: absolute;
             margin-top: 100px;
             margin-left: 30px;
@@ -150,8 +150,9 @@
         
         .second {
             
-            margin-left: 80px;
+           margin-left: 80px;
             color: #000000;
+           
             
             
           
@@ -162,6 +163,19 @@
            margin-top: 35px;
            
         }
+        .second .projects{
+            justify-content: space-around;
+            display: flex;
+            width:100%;
+        }
+        .rightPro img{
+            height: 350px;
+            width: 350px;
+            margin-top: 200px;
+        }
+        .projects p{
+            width: 850px;
+        }
         .second h1{
             font-size: 2.5rem;
         }
@@ -171,6 +185,13 @@
             color: #000000;
             
         }
+        .third >img{
+            display: block;
+            width: 27%;
+            margin-left: auto;
+  margin-right: auto;
+            margin-top: 40px;
+        }
         .third h1{
             font-size: 2.5rem;
         }
@@ -178,7 +199,7 @@
             display: flex;
             justify-content: space-around;
             
-            margin-top: 50px;
+            margin-top: 70px;
             
         }
         .third .line{
@@ -198,28 +219,44 @@
         }
        
         .fourth{
+            height: 700px;
             color: black;
-            margin-top: 80px;
-            margin-left: 80px;
+            margin-top: 95px;
+            margin-left: 10px;
         }
        .fourth h1{
+        margin-left: 80px;
         font-size: 2.5rem;
        }
-       .skill .s1{
-        justify-content: space-around;
-        display: flex;
+       .whole{
         width: 100%;
+        display: flex;
+        justify-content: space-around;
+       }
+       .whole .sec1 img{
+        margin-top: 80px;
+        margin-left: 100px;
+       width: 50%;
+       }
+       .skill{
+        margin-top: 50px;
+        width: 50%;
+       }
+       .skill .s1{
+     
+        
+       width: 70%;
         margin-top: 30px;
         color: white;
         
        }
        .skill .s1 h1{
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     background: #000000;
-  
-    height: 35px;
-    border-radius: 20px;
-    width: 15%;
+   margin-top: 30px;
+    height: 55px;
+    border-radius: 30px;
+
     justify-content: center;
     text-align:center;
     
@@ -252,7 +289,6 @@
                     <li><a href="#2">Projects</a></li>
                     <li><a href="#3">Achievements</a></li>
                     <li><a href="#4">Skills</a></li>
-                    <li><a href="/">Home</a></li>
                 </ul>
             </div>
         </nav>
@@ -288,8 +324,9 @@
         <section  id="2" class="second">
             
             <h1>Projects</h1>
-            <div class="projects">
-                
+            
+        <div class="projects">
+            <div class="leftPro">    
                 <img src="electronics-svgrepo-com.svg">
                 <h2>8-bit Signed Calculator</h2>
                 <p> Gained knowledge about logic gates,logical operations,digital design.
@@ -298,23 +335,27 @@
                     And schematic has different modes access them.</p>
                     <img src="android-svgrepo-com.svg">
                     <h2>PhoneCall Android App</h2>
-                <p> Gained knowledge about logic gates,logical operations,digital design.
-                     Explored about Xilinx(Software) and made schematic of 8-bit signed calculator.
-                    Calculator contains 8-bit adder, subtractor, multiplier and divider.
-                    And schematic has different modes access them.</p>
+                <p> Learnt about Android Studio(Software) and developed the application.
+                    An application for organising you Contacts and Call logs of an android smartphone.
+                    The application can also be used for calling or messaging your Contacts</p>
                 <img src="drone-quadcopter-top-svgrepo-com.svg">
                 <h2>Sewak Drone</h2>
-                <p> Gained knowledge about logic gates,logical operations,digital design.
-                     Explored about Xilinx(Software) and made schematic of 8-bit signed calculator.
-                    Calculator contains 8-bit adder, subtractor, multiplier and divider.
-                    And schematic has different modes access them.</p>
+                <p> Worked on construction and circuitry of a drone and its components.
+                    Calibrated flight controller(APM) on Mission Planner(software) for flight of the drone.
+                    Did some test flights and learnt the controls of Remote Control of the Drone.
+                    Shortlisted by the college for Smart India Hackathon 2022.</p>
                 
             </div>
-            
+            <div class="rightPro">
+                <img src="Teal and Blue Duo Tone Seamless Content Ideas Carousel Instagram Post.png">
+
+            </div>
+        </div>
 
         </section>
         <section  id="3" class="third">
             <h1 style="color: #000000;">Achivements</h1>
+            <img src="achi.png">
             <div class="achivement">
                
                <div class="achive">
@@ -335,6 +376,10 @@
         </section>
         <section  id="4" class="fourth">
             <h1>Skills</h1>
+            <div class="whole">
+            <div class="sec1">
+                <img src="skillllll.png">
+            </div>
             <div class="skill">
                 <div class="s1">
                     <h1>Verilog</h1>
@@ -347,6 +392,7 @@
                     <h1>CSS</h1>
                 </div>
             </div>
+        </div>
         </section>
         <section id="5" class="fifth">
             <h1 style="font-size: 30px;">Contacts</h1>
